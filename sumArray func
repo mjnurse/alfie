@@ -1,0 +1,21 @@
+let array = [1,4,5];
+let sum = 0;
+
+// function sumArray(array)
+// {
+//     for(let i = 0; i <= array.length; i++)
+//     {
+//         sum += array[i];
+//     }
+//     return sum;
+// }
+
+function sumArray(array)
+{
+    for(let i of array)
+    {
+        i+=sum;
+    }
+    return sum;
+}
+
