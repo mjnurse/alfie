@@ -19,3 +19,30 @@ function sumArray(array)
     return sum;
 }
 
+
+
+
+
+
+
+
+
+
+
+const movies = [
+    {
+        title: 'Bat-Man',
+        score: 40
+    },
+    {
+        title: 'Super-Man',
+        score: 100
+    },
+    {
+        title: 'Spider-Man',
+        score: 73
+    }
+]
+
+const movie_func = movies.map(movie => (`${movie.title}-${movie.score}`))
+
