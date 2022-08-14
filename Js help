@@ -1,14 +1,14 @@
 let array = [1,4,5];
 let sum = 0;
 
-// function sumArray(array)
-// {
-//     for(let i = 0; i <= array.length; i++)
-//     {
-//         sum += array[i];
-//     }
-//     return sum;
-// }
+function sumArray(array)
+ {
+     for(let i = 0; i <= array.length; i++)
+     {
+         sum += array[i];
+     }
+     return sum;
+}
 
 function sumArray(array)
 {
@@ -19,30 +19,41 @@ function sumArray(array)
     return sum;
 }
 
+//How to iterate through array and sum up properies of array
 
 
-
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////
 
 
 const movies = [
     {
         title: 'Bat-Man',
-        score: 40
+        score: 40,
+        year: 2021
     },
     {
-        title: 'Super-Man',
-        score: 100
+        title: 'SuperMan',
+        score: 100,
+        year: 2019
     },
     {
         title: 'Spider-Man',
-        score: 73
+        score: 73,
+        year: 2011
     }
 ]
 
+
+
+
+const newmovies = movies.filter(m => m.year > 2020)
+
+//Outpuut = spider-man and super-man
+
+
+
+
 const movie_func = movies.map(movie => (`${movie.title}-${movie.score}`))
+
+//Output = movie_func is not a function
 
