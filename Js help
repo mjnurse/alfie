@@ -33,12 +33,12 @@ const movies = [
     },
     {
         title: 'SuperMan',
-        score: 100,
+        score: 73,
         year: 2019
     },
     {
         title: 'Spider-Man',
-        score: 73,
+        score: 100,
         year: 2011
     }
 ]
