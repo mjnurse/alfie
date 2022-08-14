@@ -48,7 +48,14 @@ const movies = [
 
 const newmovies = movies.filter(m => m.year > 2020)
 
-//Outpuut = spider-man and super-man
+//Output = spider-man and super-man
+
+
+
+
+somemoviegood = movies.some(score => score >= 75)
+
+//Output = false
 
 
 
