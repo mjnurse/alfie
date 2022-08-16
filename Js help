@@ -1,25 +1,14 @@
-let array = [1,4,5];
-let sum = 0;
-
-function sumArray(array)
- {
-     for(let i = 0; i <= array.length; i++)
-     {
-         sum += array[i];
-     }
-     return sum;
-}
-
 function sumArray(array)
 {
-    for(let i of array)
+    let sum = 0;
+    for(let i = 0; i < array.length; i++)
     {
-        i+=sum;
+        sum += array[i]
     }
     return sum;
 }
 
-//How to iterate through array and sum up properies of array
+//Why does the sum = 0, have to be inside the function to work correctly
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,18 +34,15 @@ const movies = [
 
 
 
-
 const newmovies = movies.filter(m => m.year > 2020)
 
 //Output = spider-man and super-man
 
 
 
-
 somemoviegood = movies.some(score => score >= 75)
 
 //Output = false
-
 
 
 
@@ -67,8 +53,3 @@ const movie_func = movies.map(movie => (`${movie.title}-${movie.score}`))
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-while(choice !== "quit" && choice !== "q")
-
-//Why do you have to use an AND operator not OR when its is basically asking if either of them are inputted
