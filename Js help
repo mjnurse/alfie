@@ -1,4 +1,16 @@
+let array = [1,4,5];
+
+let sum = 0;
 function sumArray(array)
+{
+    for(let i = 1; i < array.length; i++)
+    {
+        sum += array[i]
+    }
+    return sum;
+} // Output(9)
+
+function sumArray2(array)
 {
     let sum = 0;
     for(let i = 0; i < array.length; i++)
@@ -6,7 +18,7 @@ function sumArray(array)
         sum += array[i]
     }
     return sum;
-}
+} // Output(10)
 
 //Why does the sum = 0, have to be inside the function to work correctly
 
