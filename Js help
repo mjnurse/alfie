@@ -63,5 +63,44 @@ const movie_func = movies.map(movie => (`${movie.title}-${movie.score}`))
 //Output = movie_func is not a function
 
 
+// =================================================================================
+// Martins version
+// =================================================================================
+
+const movies = [
+    {
+        title: 'Bat-Man',
+        score: 40,
+        year: 2021
+    },
+    {
+        title: 'SuperMan',
+        score: 73,
+        year: 2019
+    },
+    {
+        title: 'Spider-Man',
+        score: 100,
+        year: 2011
+    }
+]
+const newmovies = movies.filter(m => m.year > 2020)
+console.log('newmovies:', newmovies);
+// Output = "newmovies: [ { title: 'Bat-Man', score: 40, year: 2021 } ]"
+
+const somemoviegood = movies.some(m => m.score > 75)
+console.log('somemoviegood:', somemoviegood);
+// Output = "somemoviegood: true"
+
+const goodmovies = movies.filter(m => m.score > 75)
+console.log('goodmovies:', goodmovies);
+// Output = "goodmovies: [ { title: 'Spider-Man', score: 100, year: 2011 } ]"
+
+const movie_func = movies.map(movie => (`${movie.title}-${movie.score}`))
+console.log('movie_func:', movie_func);
+// Output = "movie_func: [ 'Bat-Man-40', 'SuperMan-73', 'Spider-Man-100' ]"
+// 
+// This isn't a function - you are mapping the array of JSON elements into and array of strings
+// Each string is the name and score joined together with a "-"
 
 
